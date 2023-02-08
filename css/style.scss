@@ -1,0 +1,52 @@
+@import 'config';
+
+/* Settings */
+/* ----------------------------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: $black;
+}
+
+a{
+    text-decoration: none;
+    color: $white;
+}
+ul{
+    list-style: none;
+}
+
+h1,h2,h3{
+    color: $white;
+}
+p{
+    color: $white;
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    width: 1270px;
+    margin: 0 auto;
+}
+
+/* Landing style */
+/* ----------------------------------------------------------------------- */
+/* Navigation */
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    .nav_links{
+        display: flex;  
+        justify-content: space-between;
+        width: 340px;
+
+    }
+}

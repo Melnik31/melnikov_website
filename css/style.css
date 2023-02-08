@@ -1,0 +1,52 @@
+/* Colors */
+/* Settings */
+/* ----------------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1f1f1f;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1270px;
+  margin: 0 auto;
+}
+
+/* Landing style */
+/* ----------------------------------------------------------------------- */
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav .nav_links {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}/*# sourceMappingURL=style.css.map */
