@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>MMG</title>
 </head>
 <body>
-    <div class="landing">
+    <div class="landing" id="home">
         <div class="container">
             <div class="nav">
                 <div class="logo">
@@ -16,23 +17,77 @@
                 </div>
                 <div class="nav_bar">
                     <ul class="nav_links">
-                        <li><a href="#" class="links">Home</a></li>
-                        <li><a href="#" class="links">About me</a></li>
+                        <li><a href="#home" class="links active">Home</a></li>
+                        <li><a href="#lessons" class="links">About me</a></li>
                         <li><a href="#" class="links">Lessons </a></li>
                         <li><a href="#" class="links">Contacts</a></li>
                     </ul>
                 </div>
             </div>
+
+            <!-- Offer -->
             <div class="offer">
-                <img src="/img/offer-img.png" alt="goalie" class="offer_img">
+                <div class="offer_img">
+                    
+                </div>
                 <div class="action">
                     <div class="offer_text">
                         <h1 class="title">Mike Melnikov</h1>
                         <p class="text">Goalie coach</p>
                     </div>
-                    <a href="#" class="offer_btn">Book a lesson</a>
+                    <a href="#" class="btn offer_btn">Book a lesson</a>
                 </div>
             </div>
+
+            <!-- About -->
+            <section class="about" id="about">
+                <h1 class="about_title">About me</h1>
+                <div class="container">
+                    <div class="photo">
+
+                    </div>
+                    <div class="about_text">
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lessons -->
+            <section class="lessons" id="lessons">
+                <div class="container">
+                    <h1 class="lessons_title">Lessons</h1>
+                    <div class="price_wrap">
+                        <div class="pl border">
+                            <div class="info_wrap">
+                                <h2 class="price_title">Private lessons</h2>
+                                <h2>1 : 1</h2>
+                                <p>Goalie to coach ratio</p>
+                                <ul>
+                                    <li>· 1 hour on ice session</li>
+                                    <li>· Individual practice plan</li>
+                                    <li>· Game situation drills</li>
+                                </ul>
+                                <h2 class="price">$75</h2>
+                                <a href="#" class="btn lessons_btn">Book a lesson</a>
+                            </div>
+                        </div>
+                        <div class="gl border">
+                            <div class="info_wrap">   
+                                <h2 class="price_title">Group lessons</h2>
+                                <h2>4 : 1</h2>
+                                <p>Goalie to coach ratio</p>
+                                <ul>
+                                    <li>· 1 hour on ice session</li>
+                                    <li>· Skating</li>
+                                    <li>· Game situation drills</li>
+                                </ul>
+                                <h2 class="price"><span>$55</span>/goalie</h2>
+                                <a href="#" class="btn lessons_btn">Book a lesson</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </body>

@@ -24,6 +24,12 @@ ul{
 h1,h2,h3{
     color: $white;
 }
+h1{
+    font-weight: 600;
+}
+h2{
+    font-weight: 400;
+}
 p{
     color: $white;
 }
@@ -32,21 +38,132 @@ img{
 }
 
 .container{
-    width: 1270px;
+    width: 85%;
     margin: 0 auto;
 }
 
+.btn{
+    background: $orange;
+    border-radius: .6rem;
+    transition: all .4s ease;
+        &:hover{
+            background: $orange-hover;
+        }
+}
 /* Landing style */
 /* ----------------------------------------------------------------------- */
 /* Navigation */
 .nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2.2rem 0 1.2rem;
+    .nav_bar{
+        background-color: rgba(214, 214, 214, 0.05);
+        padding: 2.2rem 3.2rem;
+        border-radius: .6rem;
+        .nav_links{
+            display: flex;  
+            justify-content: space-between;
+            width: 21.2rem;
+            .links{
+                transition: all .4s ease;
+                &:hover{
+                    color: $orange;
+                }
+               
 
-    .nav_links{
-        display: flex;  
-        justify-content: space-between;
-        width: 340px;
-
+            }
+    
+        }    
     }
+}
+.active{
+    color: $orange;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Offer */
+.offer{
+    height: 620px;
+    background: url(/img/offer-img.png) center;
+    border-radius: 10px;
+    position: relative;
+}
+.action{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    .offer_text{
+        .title{
+            font-size: 5rem;
+        }
+        .text{
+            font-size: 2.5rem;
+            margin: 1.2rem 0 4rem;
+        }
+    }
+    .offer_btn{
+        padding: 1.3rem 0 1.3rem;
+        width: 40%;
+        
+    }
+}
+
+/* ----------------------------------------------------------------------- */
+/* Lessons */
+.lessons{
+    .container{
+        width: 70%;
+    }
+    .lessons_title{
+        text-align: center;
+        font-size: 2.6rem;
+        font-weight: 600;
+        margin-bottom: 9.4rem;
+    }
+}
+.price_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.border{
+    border: solid rgba(214, 214, 214, 0.3) .7rem;
+    border-radius: 3rem;
+}
+li{
+    color: $white;
+}
+.info_wrap{
+    padding: 2.2rem 4.7rem;
+    display: flex;
+    flex-direction: column;
+    .price_title{
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    ul{
+        margin: 2.5rem 0 2.5rem;
+    }
+}
+.price{
+    margin-bottom: 2.5rem;
+}
+.lessons_btn{
+    text-align: center;
+    padding: 1.2rem 0 1.2rem;
+    width: 90%;
+    margin: 0 auto;
 }

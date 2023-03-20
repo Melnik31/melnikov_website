@@ -25,6 +25,14 @@ h1, h2, h3 {
   color: #fff;
 }
 
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+}
+
 p {
   color: #fff;
 }
@@ -34,8 +42,17 @@ img {
 }
 
 .container {
-  width: 1270px;
+  width: 85%;
   margin: 0 auto;
+}
+
+.btn {
+  background: #E96B23;
+  border-radius: 0.6rem;
+  transition: all 0.4s ease;
+}
+.btn:hover {
+  background: #C24E0B;
 }
 
 /* Landing style */
@@ -44,9 +61,114 @@ img {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 2.2rem 0 1.2rem;
 }
-.nav .nav_links {
+.nav .nav_bar {
+  background-color: rgba(214, 214, 214, 0.05);
+  padding: 2.2rem 3.2rem;
+  border-radius: 0.6rem;
+}
+.nav .nav_bar .nav_links {
   display: flex;
   justify-content: space-between;
-  width: 340px;
+  width: 21.2rem;
+}
+.nav .nav_bar .nav_links .links {
+  transition: all 0.4s ease;
+}
+.nav .nav_bar .nav_links .links:hover {
+  color: #E96B23;
+}
+
+.active {
+  color: #E96B23;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Offer */
+.offer {
+  height: 620px;
+  background: url(/img/offer-img.png) center;
+  border-radius: 10px;
+  position: relative;
+}
+
+.action {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.action .offer_text .title {
+  font-size: 5rem;
+}
+.action .offer_text .text {
+  font-size: 2.5rem;
+  margin: 1.2rem 0 4rem;
+}
+.action .offer_btn {
+  padding: 1.3rem 0 1.3rem;
+  width: 40%;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Lessons */
+.lessons .container {
+  width: 70%;
+}
+.lessons .lessons_title {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 9.4rem;
+}
+
+.price_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border {
+  border: solid rgba(214, 214, 214, 0.3) 0.7rem;
+  border-radius: 3rem;
+}
+
+li {
+  color: #fff;
+}
+
+.info_wrap {
+  padding: 2.2rem 4.7rem;
+  display: flex;
+  flex-direction: column;
+}
+.info_wrap .price_title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.info_wrap h2 {
+  text-align: center;
+}
+.info_wrap p {
+  text-align: center;
+}
+.info_wrap ul {
+  margin: 2.5rem 0 2.5rem;
+}
+
+.price {
+  margin-bottom: 2.5rem;
+}
+
+.lessons_btn {
+  text-align: center;
+  padding: 1.2rem 0 1.2rem;
+  width: 90%;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
