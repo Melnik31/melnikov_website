@@ -18,8 +18,8 @@
                 <div class="nav_bar">
                     <ul class="nav_links">
                         <li><a href="#home" class="links active">Home</a></li>
-                        <li><a href="#lessons" class="links">About me</a></li>
-                        <li><a href="#" class="links">Lessons </a></li>
+                        <li><a href="#about" class="links">About me</a></li>
+                        <li><a href="#lessons" class="links">Lessons </a></li>
                         <li><a href="#" class="links">Contacts</a></li>
                     </ul>
                 </div>
@@ -35,7 +35,7 @@
                         <h1 class="title">Mike Melnikov</h1>
                         <p class="text">Goalie coach</p>
                     </div>
-                    <a href="#" class="btn offer_btn">Book a lesson</a>
+                    <a href="#lessons" class="btn offer_btn">Book a lesson</a>
                 </div>
             </div>
 
@@ -86,6 +86,20 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- Booking -->
+            <section class="booking" id="booking">
+                <div class="booking_wrap">
+                    <h1 class="booking_title">Book a lesson</h1>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <label class="form_name">Your name <br> <input type="text" name="name" placeholder="Name"  /></label>
+                        <label class="form_number">Your number <br> <input type="phone" name="number" placeholder="(xxx)xxx-xx-xx" /></label>
+                        <label class="form_email">Your email <br> <input type="email" name="email" placeholder="exaple@example.com"  /></label>
+                        <label class="form_age">Age of the Goalie <input type="number" name="age" placeholder="10"  /></label>
+                        <button type="submit" class="form_btn">Send  ></button>
+                    </form>
                 </div>
             </section>
         </div>

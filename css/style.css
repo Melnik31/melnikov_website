@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background-color: #1f1f1f;
@@ -119,6 +123,9 @@ img {
 
 /* ----------------------------------------------------------------------- */
 /* Lessons */
+.lessons {
+  margin-bottom: 12.5rem;
+}
 .lessons .container {
   width: 70%;
 }
@@ -141,10 +148,12 @@ img {
 
 li {
   color: #fff;
+  line-height: 2rem;
 }
 
 .info_wrap {
-  padding: 2.2rem 4.7rem;
+  padding: 2.2rem 0;
+  width: 20rem;
   display: flex;
   flex-direction: column;
 }
@@ -159,7 +168,7 @@ li {
   text-align: center;
 }
 .info_wrap ul {
-  margin: 2.5rem 0 2.5rem;
+  margin: 2.5rem auto 2.5rem;
 }
 
 .price {
@@ -169,6 +178,72 @@ li {
 .lessons_btn {
   text-align: center;
   padding: 1.2rem 0 1.2rem;
-  width: 90%;
+  width: 45%;
   margin: 0 auto;
+  font-size: 0.8rem;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Booking */
+.booking {
+  background: rgba(214, 214, 214, 0.05);
+  border-radius: 0.6rem;
+}
+
+.booking_wrap {
+  padding: 3rem 7.5rem 1.5rem;
+}
+
+.booking_title {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 42px;
+  grid-template-areas: "name number" "email age" "btn btn";
+  color: #fff;
+}
+form .form_name {
+  grid-area: name;
+}
+form .form_number {
+  grid-area: number;
+}
+form .form_email {
+  grid-area: email;
+}
+form .form_age {
+  grid-area: age;
+}
+form .form_btn {
+  grid-area: btn;
+}
+
+input {
+  background: rgba(214, 214, 214, 0.3);
+  border: none;
+  padding: 1.5rem 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.6rem;
+}
+
+.form_btn {
+  width: 50%;
+  margin: 0 auto;
+  height: 70%;
+  color: #fff;
+  background: #E96B23;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: all 0.4 ease;
+}
+.form_btn:hover {
+  background: #C24E0B;
 }/*# sourceMappingURL=style.css.map */
