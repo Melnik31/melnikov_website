@@ -19,6 +19,7 @@ body {
 a{
     text-decoration: none;
     color: $white;
+    transition: all .4s ease;
 }
 ul{
     list-style: none;
@@ -71,7 +72,7 @@ img{
             justify-content: space-between;
             width: 21.2rem;
             .links{
-                transition: all .4s ease;
+                
                 &:hover{
                     color: $orange;
                 }
@@ -225,8 +226,32 @@ input{
     border: none;
     border-radius: .6rem;
     cursor: pointer;
-    transition: all .4 ease;
+    
     &:hover{
         background: $orange-hover;
     }
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* Footer */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6rem 0;
+    a{
+        &:hover{
+            color: $orange-hover;
+        }
+    }
+}
+.contacts_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.adress{
+    line-height: 24px;
 }

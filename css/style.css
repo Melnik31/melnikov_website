@@ -19,6 +19,7 @@ body {
 a {
   text-decoration: none;
   color: #fff;
+  transition: all 0.4s ease;
 }
 
 ul {
@@ -78,9 +79,6 @@ img {
   display: flex;
   justify-content: space-between;
   width: 21.2rem;
-}
-.nav .nav_bar .nav_links .links {
-  transition: all 0.4s ease;
 }
 .nav .nav_bar .nav_links .links:hover {
   color: #E96B23;
@@ -242,8 +240,29 @@ input {
   border: none;
   border-radius: 0.6rem;
   cursor: pointer;
-  transition: all 0.4 ease;
 }
 .form_btn:hover {
   background: #C24E0B;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6rem 0;
+}
+.footer a:hover {
+  color: #C24E0B;
+}
+
+.contacts_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.adress {
+  line-height: 24px;
 }/*# sourceMappingURL=style.css.map */
