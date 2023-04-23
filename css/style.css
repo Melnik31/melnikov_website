@@ -126,6 +126,7 @@ img {
 /* Lessons */
 .lessons {
   margin-bottom: 12.5rem;
+  text-align: center;
 }
 .lessons .container {
   width: 80%;
@@ -147,14 +148,25 @@ img {
   border-radius: 3rem;
 }
 
+ul {
+  text-align: start;
+}
+
 li {
   color: #fff;
   line-height: 2rem;
 }
 
+.pl {
+  flex-basis: 35%;
+}
+
+.gl {
+  flex-basis: 35%;
+}
+
 .info_wrap {
   padding: 2.2rem 0;
-  width: 20rem;
   display: flex;
   flex-direction: column;
 }
@@ -271,24 +283,56 @@ input {
 }
 
 @media (max-width: 480px) {
+  .container {
+    width: 90%;
+  }
+  /* ----------------------------------------------------------------------- */
+  /* Offer */
+  .action .offer_text .title {
+    font-size: 4rem;
+  }
+  .action .offer_text .text {
+    font-size: 1.6rem;
+  }
+  .action .offer_btn {
+    width: 60%;
+  }
+  /* ----------------------------------------------------------------------- */
+  /* Nav */
   .nav .nav_bar {
     display: none;
   }
   .nav .phone_number {
     display: block;
   }
+  /* ----------------------------------------------------------------------- */
+  /* Lessons */
   .price_wrap {
     flex-direction: column;
     gap: 6rem;
   }
-  .info_wrap {
-    width: 304.398px;
+  .lessons_btn {
+    width: 60%;
   }
-}
-.booking_wrap {
-  padding: 0.5rem;
-}
-
-.adress {
-  display: none;
+  /* ----------------------------------------------------------------------- */
+  /* Booking */
+  .booking_wrap {
+    padding: 0.5rem;
+  }
+  form {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "name" "number" "email" "age" "btn";
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+  }
+  .form_btn {
+    height: 100%;
+    padding: 1.2rem;
+  }
+  /* ----------------------------------------------------------------------- */
+  /* Footer */
+  .adress {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
