@@ -63,6 +63,9 @@ img{
     align-items: center;
     text-align: center;
     padding: 2.2rem 0 1.2rem;
+    .phone_number{
+        display: none;
+    }
     .nav_bar{
         background-color: rgba(214, 214, 214, 0.05);
         padding: 2.2rem 3.2rem;
@@ -125,7 +128,7 @@ img{
 .lessons{
     margin-bottom: 12.5rem;
     .container{
-        width: 70%;
+        width: 80%;
     }
     .lessons_title{
         text-align: center;
@@ -254,4 +257,32 @@ input{
 }
 .adress{
     line-height: 24px;
+}
+
+@media (max-width: 480px){
+    .nav{
+        .nav_bar{
+            display: none;
+        }
+        .phone_number{
+            display: block;
+        }
+    }
+
+    .price_wrap{
+        flex-direction: column;
+        gap: 6rem;
+    }
+    .info_wrap{
+        width: 304.398px;
+
+    }
+}
+
+.booking_wrap{
+    padding: .5rem;
+}
+
+.adress{
+    display: none;
 }
