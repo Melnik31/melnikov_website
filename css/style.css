@@ -87,10 +87,7 @@ img {
 }
 .nav .nav_bar .nav_links .links:hover {
   color: #E96B23;
-}
-
-.active {
-  color: #E96B23;
+  font-weight: bold;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -132,11 +129,12 @@ img {
 }
 .about .about_title {
   font-size: 2.6rem;
-  padding-bottom: 9.3rem;
+  margin-bottom: 9.3rem;
 }
 
 .about_wrap {
   display: flex;
+  align-items: center;
 }
 .about_wrap .photo {
   flex: 1;
@@ -146,6 +144,11 @@ img {
   text-align: justify;
   font-size: 1.3rem;
   line-height: 1.5;
+}
+
+.about_photo {
+  max-height: 18.7rem;
+  border-radius: 10px;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -269,6 +272,7 @@ label {
 }
 
 input {
+  color: #fff;
   background: rgba(214, 214, 214, 0.3);
   border: none;
   padding: 1.5rem 0.5rem;
@@ -312,7 +316,22 @@ input {
 }
 
 .adress {
-  line-height: 24px;
+  line-height: 1.9rem;
+}
+
+.contacts_logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.credits {
+  opacity: 0.2;
+  display: flex;
+  justify-content: space-between;
+}
+.credits .by:hover {
+  color: #C24E0B;
 }
 
 @media (max-width: 480px) {
@@ -341,12 +360,24 @@ input {
   }
   /* ----------------------------------------------------------------------- */
   /* Lessons */
+  .lessons .lessons_title {
+    margin-bottom: 5.3rem;
+  }
   .price_wrap {
     flex-direction: column;
     gap: 6rem;
   }
   .lessons_btn {
     width: 60%;
+  }
+  /* ----------------------------------------------------------------------- */
+  /* About */
+  .about .about_title {
+    margin-bottom: 5.3rem;
+  }
+  .about_wrap {
+    flex-direction: column-reverse;
+    gap: 3.5rem;
   }
   /* ----------------------------------------------------------------------- */
   /* Booking */
@@ -366,7 +397,25 @@ input {
   }
   /* ----------------------------------------------------------------------- */
   /* Footer */
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer .logo {
+    margin-bottom: 5rem;
+  }
+  .up {
+    margin-top: 5rem;
+    align-self: flex-end;
+  }
+  .contacts_wrap {
+    margin-bottom: 2.2rem;
+    font-size: 1.5rem;
+  }
   .adress {
-    display: none;
+    font-size: 1.5rem;
+  }
+  .by_m {
+    text-align: end;
   }
 }/*# sourceMappingURL=style.css.map */

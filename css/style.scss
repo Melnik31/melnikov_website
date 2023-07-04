@@ -80,6 +80,7 @@ img{
                 
                 &:hover{
                     color: $orange;
+                    font-weight: bold;
                 }
                
 
@@ -88,9 +89,7 @@ img{
         }    
     }
 }
-.active{
-    color: $orange;
-}
+
 
 /* ----------------------------------------------------------------------- */
 /* Offer */
@@ -132,11 +131,12 @@ img{
     padding: 12rem 0;
     .about_title{
         font-size: 2.6rem;
-        padding-bottom: 9.3rem;
+        margin-bottom: 9.3rem;
     }
 }
 .about_wrap{
     display: flex;
+    align-items: center;
     .photo{
         flex: 1;
     }
@@ -146,6 +146,10 @@ img{
         font-size: 1.3rem;
         line-height: 1.5;
     }
+}
+.about_photo{
+    max-height: 18.7rem;
+    border-radius: 10px;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -250,6 +254,7 @@ label{
 }
 
 input{
+    color: $white;
     background: rgba(214, 214, 214, 0.3);
     border: none;
     padding: 1.5rem .5rem;
@@ -296,8 +301,28 @@ input{
     gap: 1.2rem;
 }
 .adress{
-    line-height: 24px;
+    line-height: 1.9rem;
 }
+
+.contacts_logo{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+
+.credits{
+    opacity: .2;
+    display: flex;
+    justify-content: space-between;
+    
+    .by{
+        &:hover{
+            color: $orange-hover;
+        }
+    }
+}
+
 
 @media (max-width: 480px){
     .container{
@@ -333,6 +358,11 @@ input{
     }
     /* ----------------------------------------------------------------------- */
     /* Lessons */
+    .lessons{
+        .lessons_title{
+            margin-bottom: 5.3rem;
+        }
+    }
     .price_wrap{
         flex-direction: column;
         gap: 6rem;
@@ -340,6 +370,18 @@ input{
    .lessons_btn{
     width: 60%;
    }
+
+    /* ----------------------------------------------------------------------- */
+    /* About */
+    .about{
+        .about_title{
+            margin-bottom: 5.3rem;
+        }
+    }
+    .about_wrap{
+        flex-direction: column-reverse;
+        gap: 3.5rem;
+    }
 
     /* ----------------------------------------------------------------------- */
     /* Booking */
@@ -366,7 +408,27 @@ input{
 
     /* ----------------------------------------------------------------------- */
     /* Footer */
-    .adress{
-        display: none;
-    }
+   .footer{
+        flex-direction: column;
+        align-items: flex-start;
+   
+        .logo{
+                margin-bottom: 5rem;
+        }
+    }   
+   .up{
+        margin-top: 5rem;
+        align-self: flex-end;
+   }
+   .contacts_wrap{
+        margin-bottom: 2.2rem;
+        font-size: 1.5rem;
+   }
+   .adress{
+    font-size: 1.5rem;
+   }
+
+   .by_m{
+    text-align: end;
+   }
 }
