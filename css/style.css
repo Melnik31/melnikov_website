@@ -55,6 +55,8 @@ img {
   background: #E96B23;
   border-radius: 0.6rem;
   transition: all 0.4s ease;
+  font-weight: bold;
+  font-size: 1rem;
 }
 .btn:hover {
   background: #C24E0B;
@@ -123,6 +125,30 @@ img {
 }
 
 /* ----------------------------------------------------------------------- */
+/* About */
+.about {
+  text-align: center;
+  padding: 12rem 0;
+}
+.about .about_title {
+  font-size: 2.6rem;
+  padding-bottom: 9.3rem;
+}
+
+.about_wrap {
+  display: flex;
+}
+.about_wrap .photo {
+  flex: 1;
+}
+.about_wrap .about_text {
+  flex: 2;
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+/* ----------------------------------------------------------------------- */
 /* Lessons */
 .lessons {
   margin-bottom: 12.5rem;
@@ -169,6 +195,7 @@ li {
   padding: 2.2rem 0;
   display: flex;
   flex-direction: column;
+  font-size: 1.3rem;
 }
 .info_wrap .price_title {
   text-align: center;
@@ -193,7 +220,7 @@ li {
   padding: 1.2rem 0 1.2rem;
   width: 45%;
   margin: 0 auto;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* ----------------------------------------------------------------------- */
@@ -237,6 +264,10 @@ form .form_btn {
   grid-area: btn;
 }
 
+label {
+  font-size: 1.3rem;
+}
+
 input {
   background: rgba(214, 214, 214, 0.3);
   border: none;
@@ -255,6 +286,8 @@ input {
   border: none;
   border-radius: 0.6rem;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
 }
 .form_btn:hover {
   background: #C24E0B;
@@ -304,6 +337,7 @@ input {
   }
   .nav .phone_number {
     display: block;
+    font-size: 1.3rem;
   }
   /* ----------------------------------------------------------------------- */
   /* Lessons */
@@ -317,7 +351,7 @@ input {
   /* ----------------------------------------------------------------------- */
   /* Booking */
   .booking_wrap {
-    padding: 0.5rem;
+    padding: 2rem;
   }
   form {
     grid-template-columns: 1fr;
